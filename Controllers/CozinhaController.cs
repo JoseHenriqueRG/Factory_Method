@@ -1,4 +1,4 @@
-﻿using Factory_Method.Models;
+﻿using Factory_Method.Factory;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Factory_Method.Controllers

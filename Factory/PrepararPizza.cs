@@ -1,10 +1,7 @@
 ﻿using Factory_Method.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Factory_Method.Models;
 
-namespace Factory_Method.Models
+namespace Factory_Method.Factory
 {
     public class PrepararPizza : Cozinha
     {
