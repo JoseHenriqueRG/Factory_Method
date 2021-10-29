@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Factory_Method.Models.Cozinha>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form asp-controller="Cozinha" asp-action="Index" method="get">
+    <div class="row">
+        <div class="col">
+            <select name="pedido" id="pedido" class="form-select">
+                <option value="hamburguer">Hamburguer</option>
+                <option value="pizza">Pizza</option>
+                <option value="batatafrita">Batata Frita</option>
+            </select>
+        </div>
+    </div>
+    <button class="btn btn-dark">Fazer pedido</button>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <p>
+        @ViewBag.Result
+    </p>
+}
